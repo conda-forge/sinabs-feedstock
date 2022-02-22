@@ -28,6 +28,7 @@ requirements:
     - pbr
     - python >=3.6
     - pytorch >=1.9.0
+    - onnx
 
 test:
   imports:
