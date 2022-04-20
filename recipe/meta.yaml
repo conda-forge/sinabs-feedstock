@@ -1,5 +1,5 @@
 {% set name = "sinabs" %}
-{% set version = "0.3.2" %}
+{% set version = "0.3.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sinabs-{{ version }}.tar.gz
-  sha256: ec722e72baaea87afdf21a9619d1cc70a779ce3c0fda56c9fbc4a600817346d5
+  sha256: e65bb14f75a41c99b3a10a0c88c8e97343cac90c91fe128a132fd2466ca0b585
 
 build:
   number: 0
