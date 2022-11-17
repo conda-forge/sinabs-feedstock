@@ -1,5 +1,5 @@
 {% set name = "sinabs" %}
-{% set version = "1.1.2" %}
+{% set version = "1.1.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sinabs-{{ version }}.tar.gz
-  sha256: 85461edc877fb5262c3f01fad34042d4b3493154d84b768cad2fc646b02c6a29
+  sha256: 60fa64c75d36b30bfa575be458b5230ded30e3ff4be76870ed56d7a1ff17aa06
 
 build:
   number: 0
@@ -24,7 +24,6 @@ requirements:
     - python >=3.6
   run:
     - numpy
-    - pandas
     - pbr
     - python >=3.6
     - pytorch >=1.9.0
