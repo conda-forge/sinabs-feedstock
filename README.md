@@ -1,11 +1,11 @@
-About sinabs
-============
+About sinabs-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sinabs-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/sinabs/
 
 Package license: AGPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sinabs-feedstock/blob/main/LICENSE.txt)
 
 Summary: SynSense Spiking Neural Network simulator for deep neural networks (DNNs).
 
