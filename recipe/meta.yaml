@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sinabs-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sinabs-{{ version }}.tar.gz
   sha256: 28b478b2133ceb94c52e5ddc2d46054e59d14687117eab1aebf9974d3e6eb5f8
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -21,17 +21,19 @@ requirements:
   host:
     - pbr
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
     - numpy
     - pbr
-    - python >=3.6
+    - python >={{ python_min }}
     - pytorch >=1.9.0
     - onnx
     - nir
     - nirtorch
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - sinabs
   # Pip checks for proprietary library to be installed
