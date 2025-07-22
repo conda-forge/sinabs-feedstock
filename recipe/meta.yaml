@@ -29,6 +29,7 @@ requirements:
     - onnx
     - nir
     - nirtorch
+    - matplotlib-base
 
 test:
   requires:
