@@ -1,5 +1,5 @@
 {% set name = "sinabs" %}
-{% set version = "3.0.2" %}
+{% set version = "3.0.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sinabs-{{ version }}.tar.gz
-  sha256: 9cf887ae417332d409ba0cb45111de7da90848b006776bf262c8ff0f2f7234f6
+  sha256: 13243cdda104e81e886d97be202a4a7df0a4a6963bf6af3fcaa1be6fae4d6a6a
 
 build:
   number: 0
@@ -29,6 +29,7 @@ requirements:
     - onnx
     - nir
     - nirtorch
+    - matplotlib-base
 
 test:
   requires:
